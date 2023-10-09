@@ -6,6 +6,10 @@ module "vpc_network" {
 
   subnets = var.subnets
   project_id = "prj-nlosg-xyz-a"
+
+  depends_on = [
+    google_project_service.services
+  ]
 }
 
 
