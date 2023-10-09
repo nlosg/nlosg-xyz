@@ -5,7 +5,7 @@ module "vpc_network" {
   routing_mode = var.routing_mode
 
   subnets = var.subnets
-  project_id = "prj-nlosg-xyz-a"
+  project_id = var.project_id
 
   depends_on = [
     google_project_service.services
