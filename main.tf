@@ -5,4 +5,5 @@ module "vpc_network" {
   routing_mode = var.routing_mode
 
   subnets = var.subnets
+  project_id = "nlosg-xyz-dev"
 }
