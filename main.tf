@@ -13,10 +13,10 @@ module "vpc_network" {
 }
 
 
-resource "google_project_service" "services" {
+/*resource "google_project_service" "services" {
   for_each                   = toset(var.gcp_service_list)
   service                    = each.value
   project                    = var.project_id
   disable_dependent_services = true
 
-}
+}*/
