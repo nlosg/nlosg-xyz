@@ -1,4 +1,4 @@
-project_id = ""prj-nlosg-xyz-a""
+project_id = "prj-nlosg-xyz-a"
 subnets = [
 
   {
