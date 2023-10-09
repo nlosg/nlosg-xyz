@@ -7,3 +7,12 @@ module "vpc_network" {
   subnets = var.subnets
   project_id = "nlosg-xyz-dev"
 }
+
+
+resource "google_project_service" "services" {
+  for_each                   = toset(var.gcp_service_list)
+  service                    = each.value
+  project                    = var.project_id
+  disable_dependent_services = true
+
+}
